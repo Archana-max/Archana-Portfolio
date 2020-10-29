@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto&display=swap');
+
+:root{
+    --primary-color: rgba(32,40,63,0.9);
+    --contentfont-color:#ABABAB;
+    --headingfont-color:#fff;
+    --blue-color:#6666FF;
+    --heading-fontfamily: 'Fira Sans', sans-serif;
+    --content-fontfamily:'Roboto', sans-serif;
+    --secondarycontentfont-color:#5E5E5E;
+}
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.8; 
+    position: relative !important ;
+}
+
+.aboutme div h3,.skills h3,.portfolio h3,.getintouch h3 {
+    font-family:var(--headingfont-family);
+    color:#404040;
+    text-align: center !important;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color:262626;
+    padding-bottom:2rem;
+}
+
+.container-fluid{
+    overflow: hidden;
+}
+/* Navigation */
+
+ .navbar {
+    background-color: #20283F !important;
+    height:90px;
+}
+.navbar .logo{
+    margin-left:60px;
+    width:60px !important;
+    height:60px !important;
+    background-color:#F4F5F3;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index:1;
+}
+
+.logoimage{
+    width:50px !important;
+    height:50px !important;
+    padding-left:10px;
+    border-radius: 65%;
+    
+}
+.nav-item{
+    padding:0 5rem 0 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+.nav-link{
+    position:relative;
+    padding:0;
+    margin:0;
+}
+.collapse ul li a{
+    color:#ABABAB !important;
+    font-size: 1.2rem;
+}
+a.nav-link:hover{
+    color:#fff !important;
+}
+a.nav-link::before {
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:4px;
+    background-color: var(--blue-color);
+    transition: transform 500ms ease-in-out;
+    transform: scaleX(0);
+}
+a.nav-link:hover::before,
+a.nav-link:focus::before{
+    transform: scaleX(1);
+}
+
+
+/* cursor */
+.txt-type .txt{
+    border-right: 0.2rem solid #cccccc;
+    text-shadow: 1px 1px 10px #000;
+}
+/* Showcase */
+
+.showcase{
+    background-color: var(--primary-color);
+    height:90vh;
+    position:relative;
+}
+.showcase:before{
+    content:"";
+    background:url('/images/showcase2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+}
+
+.showcase .showcase-inner{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top:8rem;
+    overflow: hidden;
+}
+.showcase h1{
+    font-family:var(--headingfont-family);
+    color:var(--headingfont-color);
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
+    padding-bottom:3rem;
+}
+.showcase p{
+    color:#CCCCCC;
+    font-family: var(--content-fontfamily);
+    font-size: 3rem;
+    text-shadow: 1px 1px 10px #000;
+   
+}
+.showcaseSpan{
+    display: inline-block;
+}
+
+/* --------About Me---------- */
+
+.aboutme{
+    padding-top:8rem;
+    text-align: center !important;
+}
+
+.aboutme h3{
+    padding-bottom: 1rem !important;
+}
+
+.about .intro{
+    color:#5E5E5E;
+    font-family:var(--content-fontfamily);
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    
+}
+.description{ 
+    color:#5E5E5E;
+    font-family:var(--content-fontfamily);
+    font-size: 1.1rem;
+}
+
+/* --------Skills---------- */
+
+.skills{
+    padding-top:2rem;
+}
+
+.skills h3{
+    padding-bottom:1rem;
+}
+.progress{
+    height:7px;
+    width:85%;
+ 
+}
+.progress-bar{
+    background-color: var(--blue-color);
+    height:7px;
+
+}
+div .progressbardiv{
+    padding:1rem 0 1.5rem 0 !important;
+    color:var(--secondarycontentfont-color);
+    font-weight: bold;
+    font-size:1.6rem;
+}
+
+div .progressbardiv h6{
+    font-size: 1.1;
+}
+
+/* --------Portfolio---------- */
+
+.portfolio{
+    text-align: center !important;
+    padding-top:8rem;
+    margin-bottom:4rem;
+}
+
+.portfolioImages img{
+    width:400px;
+    height:300px;
+    padding:1.4rem 0 0 0;
+}
+
+.portfolio .description{
+    color:#5E5E5E;
+    font-family:var(--content-fontfamily);
+    font-size: 1.1rem;
+}
+
+
+/* --------Get in Touch---------- */
+
+.getintouch {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top:6rem;
+    color:var(--secondarycontentfont-color);
+    height:69vh;
+    /* background-image: linear-gradient(,#282C3F); */
+    background-color:rgba(32,40,63);
+    margin-top:6rem;
+}
+.getintouch h3{
+    padding-bottom:2.5rem;
+    color:#d9d9d9;
+}
+
+.getintouch p{
+    font-size:1.5rem;
+    color: #d9d9d9;
+    padding-bottom: 2rem;
+    font-weight: 300;
+}
+.getintouch p:nth-of-type(2){
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
+
+footer{
+    height:13vh;
+    background-color:rgba(32,40,63);
+    color: #d9d9d9;
+    text-align: center;
+    font-size:1.5rem;
+    font-weight: 300;
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+
+hr{
+    margin:0;
+}
