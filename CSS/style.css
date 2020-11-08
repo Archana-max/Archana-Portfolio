@@ -91,7 +91,6 @@ a.nav-link:focus::before{
     transform: scaleX(1);
 }
 
-
 /* cursor */
 .txt-type .txt{
     border-right: 0.2rem solid #cccccc;
