@@ -106,7 +106,7 @@ a.nav-link:focus::before{
 }
 .showcase:before{
     content:"";
-    background:url('/images/showcase2.jpg') no-repeat center center/cover;
+    background:url('./images/showcase2.jpg') no-repeat center center/cover;
     position: absolute;
     top:0;
     left:0;
