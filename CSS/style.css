@@ -386,6 +386,10 @@ hr{
     .showcase{
         height:60vh;
     }
+    .view{
+    width:300px;
+    height:250px;
+    }
 }
 @media (min-width:992px){
     .portfolioImages .left{
