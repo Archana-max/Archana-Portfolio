@@ -38,7 +38,22 @@ body {
 
  .navbar {
     background-color: #20283F !important;
-    height:90px;
+    
+}
+button.navbar-toggler{
+    width:3rem;
+    text-align: center;
+    padding:0.25rem;
+    
+}
+span .navbar-toggler-icon{
+    text-align: center! important;
+    color:#ABABAB;
+    
+}
+.navbar-light .navbar-toggler{
+    border-color:  #ABABAB;
+
 }
 .navbar .logo{
     margin-left:60px;
@@ -328,10 +343,19 @@ hr{
 @media(max-width:610px){
     .showcase-inner h1{
         font-size:3.5rem;
+        padding-bottom:1rem;
+    }
+    .showcase .showcase-inner{
+        padding-top:5rem;
+
     }
     .showcaseSpan p{
         font-size:2rem;
-    }.aboutme div h3,.skills h3,.portfolio h3,.getintouch h3 {
+    }
+    .aboutme,.portfolio,.getintouch{
+        padding-top:3rem;
+    }
+    .aboutme div h3,.skills h3,.portfolio h3,.getintouch h3 {
         font-size:1.8rem;
     }
     .subabout .intro{
@@ -359,7 +383,9 @@ hr{
     .bottom{
         margin-top:6rem;
     }
-    
+    .showcase{
+        height:60vh;
+    }
 }
 @media (min-width:992px){
     .portfolioImages .left{
