@@ -284,7 +284,6 @@ div .progressbardiv h6{
 
 }
 .title {
-
     background-color:#535966;
     height:60px;
     border-top:1px solid #fff;
@@ -379,7 +378,6 @@ hr{
     .portfolio{
         display:flex;
         flex-direction: column;
-
     }
     .bottom{
         margin-top:6rem;
@@ -391,6 +389,9 @@ hr{
     width:300px;
     height:250px;
     }
+
+
+
     .getintouch{
         padding-top:4rem;
     }
